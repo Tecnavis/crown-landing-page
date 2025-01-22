@@ -35,6 +35,41 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+ <style>
+ /* General Styling */
+.btn-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  flex-wrap: wrap; /* Allows buttons to wrap if space is limited */
+}
+
+.btn-getstarted {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-getstarted:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .btn-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 5px; /* Reduce the gap between buttons */
+  }
+
+  .btn-getstarted {
+    width: 100%; /* Make buttons full-width for better touch targets */
+    text-align: center; /* Center-align text inside the button */
+  }
+}
+
+ </style>
 
 <body class="index-page">
 
@@ -61,10 +96,11 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="index.html#book-a-table">Chat with us 1234566</a>
-      <a class="btn-getstarted" href="index.html#book-a-table">call us : 123456789</a>
-
+      <div class="btn-container">
+        <a class="btn-getstarted" href="index.html#book-a-table">Chat with us 1234566</a>
+        <a class="btn-getstarted" href="index.html#book-a-table">Call us: 123456789</a>
+      </div>
+      
     </div>
   </header>
 
